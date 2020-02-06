@@ -12,7 +12,7 @@ const forecast = (lat, long, callback) => {
             //     temperature: response.body.currently.temperature,
             //     precipProbability: response.body.currently.precipProbability,
             // });
-            callback(undefined, 'It\'s ' + body.temperature + ' degrees out. There is a ' + body.currently.precipProbability + '% chance of rain.');
+            callback(undefined, 'It\'s ' + body.currently.temperature + ' degrees out. There is a ' + body.currently.precipProbability + '% chance of rain. ' + body.daily.summary);
         }
     });
 };
